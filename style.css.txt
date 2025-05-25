@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #0077cc;
+    --primary-dark: #005fa3;
+    --text-color: #333;
+    --light-bg: #f4f4f4;
+    --white: #ffffff;
+    --gray-light: #eee;
+    --gray-border: #ccc;
+    --gray-text: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+}
+
+.cabecalho {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.menu {
+    background-color: var(--primary-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.menu a i {
+    margin-right: 0.5rem;
+}
+
+.conteudo {
+    padding: 2rem 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.secao {
+    margin-bottom: 2.5rem;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.secao h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--gray-border);
+    padding-bottom: 0.5rem;
+}
+
+.secao h2 i {
+    margin-right: 0.8rem;
+}
+
+.secao ul {
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+}
+
+.secao li {
+    margin-bottom: 0.5rem;
+}
+
+.secao a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.secao a:hover {
+    text-decoration: underline;
+}
+
+.projeto {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--gray-border);
+}
+
+.projeto:last-child {
+    border-bottom: none;
+}
+
+.projeto h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.contato-info p {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contato-info i {
+    margin-right: 0.8rem;
+    width: 1.5rem;
+    color: var(--primary-color);
+}
+
+.rodape {
+    background-color: var(--gray-light);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--gray-text);
+    border-top: 1px solid var(--gray-border);
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--primary-dark);
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu li {
+        margin: 0.5rem 0;
+    }
+    
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+}
